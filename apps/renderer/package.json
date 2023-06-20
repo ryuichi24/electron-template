@@ -1,0 +1,25 @@
+{
+  "name": "renderer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "tsconfig": "*",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "shared": "*",
+    "eslint-config-custom-react": "*"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "lint": {},
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^desktop#build"]
+    },
+    "desktop#build": {
+      "dependsOn": ["^renderer#build"]
+    },
+    "renderer#build": {
+      "dependsOn": ["^shared#build"]
+    },
+    "shared#build": {
+      "dependsOn": ["^util#build"]
+    },
+    "util#build": {}
+  }
+}

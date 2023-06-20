@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config-custom-node",
+  "private": true,
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "devDependencies": {
+    "eslint-config-custom-base": "*"
+  },
+  "license": "MIT"
+}

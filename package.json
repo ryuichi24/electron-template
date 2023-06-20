@@ -1,0 +1,19 @@
+{
+  "name": "electron-template",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*/**"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "author": "ryuichi24",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^1.10.3"
+  }
+}
