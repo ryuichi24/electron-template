@@ -7,12 +7,12 @@ export default defineConfig(() => {
   rmSync("dist", { recursive: true, force: true });
 
   return {
-    // build: {
-    //   lib: {
-    //     entry: 'src/main/index.ts',
-    //     name: "iife"
-    //   },
-    // },
+    build: {
+      lib: {
+        entry: "src/main/index.ts",
+        name: "lib",
+      },
+    },
     plugins: [
       electron([
         {

@@ -1,0 +1,26 @@
+{
+  "name": "builder",
+  "description": "This is an electron template project.",
+  "author": {
+    "name": "juniordevmind",
+    "email": "",
+    "url": "https://github.com/ryuichi24"
+  },
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/main/index.js",
+  "scripts": {
+    "copy:desktop": "copyfiles -u 3 ../desktop/dist/**/*.js ./dist",
+    "copy:renderer": "copyfiles -u 3 ../renderer/dist/**/*.js ../renderer/dist/**/*.html ./dist/renderer",
+    "copy": "npm run copy:desktop && npm run copy:renderer",
+    "clear": "rimraf dist release",
+    "build": "npm run clear && npm run copy && electron-builder --config electron-builder.config.js"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "electron": "25.1.1",
+    "electron-builder": "^24.4.0",
+    "rimraf": "^5.0.1"
+  },
+  "license": "MIT"
+}

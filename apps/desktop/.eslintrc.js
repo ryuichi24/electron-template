@@ -5,7 +5,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ["tsconfig.json"],
   },
-  ignorePatterns: [".eslintrc.js"],
+  ignorePatterns: [".eslintrc.js", "vite.config.ts"],
   rules: {
     /**
      * @description

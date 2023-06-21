@@ -1,12 +1,16 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [],
   "pipeline": {
     "lint": {},
     "dev": {
       "cache": false
     },
     "build": {
-      "dependsOn": ["^desktop#build"]
+      "dependsOn": ["^builder#build"]
+    },
+    "builder#build": {
+      "dependsOn": ["desktop#build"]
     },
     "desktop#build": {
       "dependsOn": ["^renderer#build"]

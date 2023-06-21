@@ -15,5 +15,8 @@
   "license": "MIT",
   "devDependencies": {
     "turbo": "^1.10.3"
+  },
+  "engines": {
+    "node": ">=v18.13.0"
   }
 }

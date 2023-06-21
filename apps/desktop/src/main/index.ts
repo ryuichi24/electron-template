@@ -1,30 +1,13 @@
 import path from "path";
 import { BrowserWindow, app } from "electron";
 
-const rootDir = path.resolve(
-  path.dirname(path.dirname(path.dirname(path.dirname(__dirname)))),
-);
 const isDev = !app.isPackaged;
 const rendererDevServerURL = `http://localhost:${
   process.env.VITE_DEV_SERVER_PORT || 3000
 }`;
 
-const preloadScriptPath = path.resolve(
-  rootDir,
-  "apps",
-  "desktop",
-  "dist",
-  "preload",
-  "index.js",
-);
-const rendererFilePath = path.resolve(
-  rootDir,
-  "apps",
-  "renderer",
-  "dist",
-  "index.html",
-);
-
+const preloadScriptPath = path.resolve(__dirname, "..", "preload", "index.js");
+const rendererFilePath = path.resolve(__dirname, "..", "renderer", "index.html");
 /**
  * Initialize custom global variables
  */
