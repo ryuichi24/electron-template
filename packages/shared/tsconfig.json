@@ -1,4 +1,7 @@
 {
   "extends": "@project/tsconfig/node.json",
-  "include": ["src"]
+  "include": ["src"],
+  "compilerOptions": {
+    "noEmit": true
+  }
 }
