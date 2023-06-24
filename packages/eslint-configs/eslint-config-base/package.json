@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom-base",
+  "name": "@project/eslint-config-base",
   "private": true,
   "version": "1.0.0",
   "main": ".eslintrc.js",

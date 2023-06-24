@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["custom-node"],
+  extends: ["@project/node"],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ["tsconfig.json"],

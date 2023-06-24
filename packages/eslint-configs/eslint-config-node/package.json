@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-custom-node",
+  "name": "@project/eslint-config-node",
   "private": true,
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "devDependencies": {
-    "eslint-config-custom-base": "*"
+    "@project/eslint-config-base": "*"
   },
   "license": "MIT"
 }

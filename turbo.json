@@ -7,20 +7,20 @@
       "cache": false
     },
     "build": {
-      "dependsOn": ["^builder#build"]
+      "dependsOn": ["^@project/builder#build"]
     },
-    "builder#build": {
-      "dependsOn": ["desktop#build"]
+    "@project/builder#build": {
+      "dependsOn": ["^@project/desktop#build"]
     },
-    "desktop#build": {
-      "dependsOn": ["^renderer#build"]
+    "@project/desktop#build": {
+      "dependsOn": ["^@project/renderer#build"]
     },
-    "renderer#build": {
-      "dependsOn": ["^shared#build"]
+    "@project/renderer#build": {
+      "dependsOn": ["^@project/shared#build"]
     },
-    "shared#build": {
-      "dependsOn": ["^util#build"]
+    "@project/shared#build": {
+      "dependsOn": ["^@project/util#build"]
     },
-    "util#build": {}
+    "@project/util#build": {}
   }
 }

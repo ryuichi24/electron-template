@@ -1,5 +1,5 @@
 {
-  "name": "renderer",
+  "name": "@project/renderer",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -15,11 +15,11 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "tsconfig": "*",
+    "@project/tsconfig": "*",
     "typescript": "^5.1.3",
     "vite": "^4.3.9",
-    "shared": "*",
-    "eslint-config-custom-react": "*"
+    "@project/shared": "*",
+    "@project/eslint-config-react": "*"
   },
   "license": "MIT"
 }

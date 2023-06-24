@@ -1,4 +1,4 @@
-import { ipc } from "shared";
+import { ipc } from "@project/shared";
 /**
  * The Empty export statement should be placed here to tell the transpiler it is "external module"
  * @see https://stackoverflow.com/a/59499895/13723015

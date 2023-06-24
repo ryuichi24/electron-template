@@ -1,5 +1,5 @@
 {
-  "name": "desktop",
+  "name": "@project/desktop",
   "private": true,
   "main": "dist/main/index.js",
   "version": "1.0.0",
@@ -13,8 +13,8 @@
     "typescript": "^5.1.3",
     "vite": "^4.3.9",
     "vite-plugin-electron": "^0.12.0",
-    "shared": "*",
-    "eslint-config-custom-node": "*"
+    "@project/shared": "*",
+    "@project/eslint-config-node": "*"
   },
   "license": "MIT"
 }

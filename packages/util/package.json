@@ -1,5 +1,5 @@
 {
-  "name": "util",
+  "name": "@project/util",
   "private": true,
   "version": "1.0.0",
   "files": [
@@ -10,6 +10,12 @@
     "watch": "tsc --watch",
     "build": "tsc",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "typescript": "^5.1.3",
+    "@project/eslint-config-node": "*",
+    "@project/tsconfig": "*"
   },
   "license": "MIT"
 }

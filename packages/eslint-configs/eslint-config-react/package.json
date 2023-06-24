@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-custom-react",
+  "name": "@project/eslint-config-react",
   "private": true,
   "version": "1.0.0",
   "main": ".eslintrc.js",
   "devDependencies": {
-    "eslint-config-custom-base": "*",
+    "@project/eslint-config-base": "*",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },

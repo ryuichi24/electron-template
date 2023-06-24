@@ -1,5 +1,5 @@
 {
-  "name": "builder",
+  "name": "@project/builder",
   "description": "This is an electron template project.",
   "author": {
     "name": "juniordevmind",

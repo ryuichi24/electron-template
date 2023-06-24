@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["custom-react"],
+  extends: ["@project/react"],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: ["tsconfig.json"],

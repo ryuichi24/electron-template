@@ -1,5 +1,5 @@
 const config = {
-  extends: ["custom-base"],
+  extends: ["@project/base"],
 };
 
 module.exports = config;

@@ -1,6 +1,6 @@
 const config = {
   extends: [
-    "custom-base",
+    "@project/base",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
   ],
