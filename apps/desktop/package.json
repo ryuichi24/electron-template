@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
   },
   "devDependencies": {
     "electron": "^25.1.1",

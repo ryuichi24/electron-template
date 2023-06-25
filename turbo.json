@@ -3,6 +3,7 @@
   "globalDependencies": [],
   "pipeline": {
     "lint": {},
+    "format": {},
     "dev": {
       "cache": false
     },
