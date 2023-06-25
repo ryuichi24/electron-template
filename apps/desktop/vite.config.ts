@@ -1,11 +1,7 @@
-import { defineConfig, type UserConfigFn } from "vite";
+import { defineConfig } from "vite";
 import electron from "vite-plugin-electron";
-import { rmSync } from "node:fs";
 
-// @ts-ignore - spreading lies
 export default defineConfig(() => {
-  rmSync("dist", { recursive: true, force: true });
-
   return {
     build: {
       lib: {
@@ -32,9 +28,6 @@ export default defineConfig(() => {
           },
         },
       ]),
-      // renderer({
-      //   nodeIntegration: true,
-      // }),
     ],
   };
 });

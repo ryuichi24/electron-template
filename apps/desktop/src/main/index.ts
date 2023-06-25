@@ -7,7 +7,12 @@ const rendererDevServerURL = `http://localhost:${
 }`;
 
 const preloadScriptPath = path.resolve(__dirname, "..", "preload", "index.js");
-const rendererFilePath = path.resolve(__dirname, "..", "renderer", "index.html");
+const rendererFilePath = path.resolve(
+  __dirname,
+  "..",
+  "renderer",
+  "index.html",
+);
 /**
  * Initialize custom global variables
  */
@@ -35,7 +40,7 @@ async function createMainWindow() {
 
   if (isDev) {
     mainWindow.webContents.openDevTools({
-      mode: "undocked",
+      mode: "bottom",
     });
 
     await mainWindow.loadURL(rendererDevServerURL);

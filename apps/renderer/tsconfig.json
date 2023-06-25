@@ -1,5 +1,8 @@
 {
   "extends": "@project/tsconfig/react.json",
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.vite.json" }],
+  "compilerOptions": {
+    "noEmit": true
+  }
 }
