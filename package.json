@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "clean": "find . \\( -name 'node_modules' -type d -or -name 'dist' -type d -or -name 'release' -type d -or -name '.turbo' -type d -or -name '*.tsbuildinfo' -type f \\) -prune -print -exec rm -rf '{}' \\;"
   },
   "author": "ryuichi24",
   "license": "MIT",
