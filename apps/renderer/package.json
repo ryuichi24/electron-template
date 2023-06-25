@@ -19,7 +19,8 @@
     "typescript": "^5.1.3",
     "vite": "^4.3.9",
     "@project/shared": "*",
-    "@project/eslint-config-react": "*"
+    "@project/eslint-config-react": "*",
+    "@project/tailwind-config": "*"
   },
   "license": "MIT"
 }
