@@ -1,4 +1,4 @@
 import { contextBridge } from "electron";
-import { ipc } from "@project/shared";
-// expose API to renderer process
-contextBridge.exposeInMainWorld("API", ipc);
+import { IPC } from "@project/shared";
+// expose IPC to renderer process
+contextBridge.exposeInMainWorld("IPC", IPC);

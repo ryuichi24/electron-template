@@ -1,5 +1,5 @@
 import { helloWorld } from "./greeting/hello-world";
 
-export const ipc = {
+export const IPC = {
   helloWorld,
 };
