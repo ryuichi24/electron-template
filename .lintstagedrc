@@ -1,0 +1,16 @@
+{
+  "apps/desktop/src/**/*.{js,ts,jsx,tsx}": ["prettier --write", "eslint --fix"],
+  "apps/renderer/src/**/*.{js,ts,jsx,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "packages/shared/src/**/*.{js,ts,jsx,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "packages/util/src/**/*.{js,ts,jsx,tsx}": [
+    "prettier --write",
+    "eslint --fix"
+  ],
+  "*.json": ["prettier --write"]
+}

@@ -10,15 +10,19 @@
     "dev": "dotenv -e ./.env -c local -- turbo run dev",
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "lint:staged": "lint-staged --concurrent false",
     "format": "turbo run format",
     "clean": "find . \\( -name 'node_modules' -type d -or -name 'dist' -type d -or -name 'release' -type d -or -name '.turbo' -type d -or -name '*.tsbuildinfo' -type f \\) -prune -print -exec rm -rf '{}' \\;",
     "gen:env": "node -e \"require('fs').copyFileSync('./.env.example', './.env.local')\"",
-    "postinstall": "echo 'successfully installed'"
+    "postinstall": "echo 'successfully installed'",
+    "prepare": "husky install"
   },
   "author": "ryuichi24",
   "license": "MIT",
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "turbo": "^1.10.3"
   },
