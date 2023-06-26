@@ -5,7 +5,7 @@ import path from "path";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd());
   return {
-    base: env.mode === "production" ? "./" : "/",
+    base: mode === "production" ? "./" : "/",
     build: {
       sourcemap: "inline",
       outDir: path.resolve(__dirname, "dist"),

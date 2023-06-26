@@ -5,6 +5,7 @@
   "files": [
     "dist/**"
   ],
+  "main": "src/index.ts",
   "scripts": {
     "dev": "npm run watch",
     "watch": "tsc --watch",

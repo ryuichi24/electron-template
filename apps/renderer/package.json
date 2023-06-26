@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && npm run clean && vite build",
     "lint": "eslint \"./src/**/*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+    "format": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,7 +22,8 @@
     "vite": "^4.3.9",
     "@project/shared": "*",
     "@project/eslint-config-react": "*",
-    "@project/tailwind-config": "*"
+    "@project/tailwind-config": "*",
+    "rimraf": "^5.0.1"
   },
   "license": "MIT"
 }

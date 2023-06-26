@@ -11,10 +11,10 @@
   "main": "./dist/main/index.js",
   "scripts": {
     "copy:desktop": "copyfiles -u 3 ../desktop/dist/**/*.js ./dist",
-    "copy:renderer": "copyfiles -u 3 ../renderer/dist/**/*.js ../renderer/dist/**/*.html ./dist/renderer",
+    "copy:renderer": "copyfiles -u 3 ../renderer/dist/**/*.js ../renderer/dist/**/*.css ../renderer/dist/**/*.html ./dist/renderer",
     "copy": "npm run copy:desktop && npm run copy:renderer",
-    "clear": "rimraf dist release",
-    "build": "npm run clear && npm run copy && electron-builder --config electron-builder.config.js"
+    "clean": "rimraf dist release",
+    "build": "npm run clean && npm run copy && electron-builder --config electron-builder.config.js"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
