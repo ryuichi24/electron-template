@@ -14,14 +14,19 @@
       "dependsOn": ["^@project/desktop#build"]
     },
     "@project/desktop#build": {
-      "dependsOn": ["^@project/renderer#build"]
+      "dependsOn": ["^@project/renderer#build"],
+      "outputs": ["dist/**"]
     },
     "@project/renderer#build": {
-      "dependsOn": ["^@project/shared#build"]
+      "dependsOn": ["^@project/shared#build"],
+      "outputs": ["dist/**"]
     },
     "@project/shared#build": {
-      "dependsOn": ["^@project/util#build"]
+      "dependsOn": ["^@project/util#build"],
+      "outputs": ["dist/**"]
     },
-    "@project/util#build": {}
+    "@project/util#build": {
+      "outputs": ["dist/**"]
+    }
   }
 }
