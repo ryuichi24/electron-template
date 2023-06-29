@@ -25,7 +25,7 @@ const config = {
       token: process.env.GH_TOKEN,
     },
   ],
-  files: ["dist", "node_modules", "package.json"],
+  files: ["dist", { from: "dist/main/assets", to: "assets", filter: ["**/*"] }],
   win: {
     target: [
       {
@@ -34,6 +34,7 @@ const config = {
       },
     ],
     artifactName: "${productName}-Windows-${version}-Setup.${ext}",
+    icon: "dist/main/assets/icons/logo/logo.png",
   },
   mac: {
     target: [
@@ -42,6 +43,7 @@ const config = {
         // should be "default" for auto updater
         target: "default",
         arch: ["arm64", "x64"],
+        icon: "dist/main/assets/icons/logo/logo.png",
       },
     ],
     artifactName: "${productName}-Mac-${version}-Installer.${ext}",
@@ -53,6 +55,7 @@ const config = {
   linux: {
     target: ["AppImage", "deb"],
     artifactName: "${productName}-Linux-${version}.${ext}",
+    icon: "dist/main/assets/icons/logo/logo.png",
   },
 };
 

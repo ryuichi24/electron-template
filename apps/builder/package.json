@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "main": "./dist/main/index.js",
   "scripts": {
-    "copy:desktop": "copyfiles -u 3 ../desktop/dist/**/*.js ./dist",
+    "copy:desktop": "copyfiles -u 3 ../desktop/dist/**/*.js ./dist & copyfiles -u 2 ../desktop/assets/**/*.json ./dist/main & copyfiles -u 2 ../desktop/assets/**/*.png ./dist/main",
     "copy:renderer": "copyfiles -u 3 ../renderer/dist/**/*.js ../renderer/dist/**/*.css ../renderer/dist/**/*.html ./dist/renderer",
     "copy": "npm run copy:desktop && npm run copy:renderer",
     "clean": "rimraf dist release",

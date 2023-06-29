@@ -13,6 +13,7 @@ const rendererFilePath = path.resolve(
   "renderer",
   "index.html",
 );
+const assetsPath = path.join(app.getAppPath(), "assets");
 /**
  * Initialize custom global variables
  */
