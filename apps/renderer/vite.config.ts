@@ -10,6 +10,9 @@ export default defineConfig(({ mode }) => {
       sourcemap: "inline",
       outDir: path.resolve(__dirname, "dist"),
     },
+    resolve: {
+      alias: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
+    },
     root: "src",
     plugins: [react()],
     server: {

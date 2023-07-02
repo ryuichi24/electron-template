@@ -3,6 +3,9 @@
   "include": ["src"],
   "references": [{ "path": "./tsconfig.vite.json" }],
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
