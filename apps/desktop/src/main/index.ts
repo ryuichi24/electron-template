@@ -1,6 +1,12 @@
 import path from "path";
 import { BrowserWindow, app } from "electron";
 
+/**
+ * Initialize custom global variables
+ */
+global.mainWindow = null;
+global.assetsPath = path.join(app.getAppPath(), "assets");
+
 const isDev = !app.isPackaged;
 const rendererDevServerURL = `http://localhost:${
   process.env.VITE_DEV_SERVER_PORT || 3000
@@ -13,11 +19,6 @@ const rendererFilePath = path.resolve(
   "renderer",
   "index.html",
 );
-const assetsPath = path.join(app.getAppPath(), "assets");
-/**
- * Initialize custom global variables
- */
-global.mainWindow = null;
 
 async function main() {
   await app.whenReady();

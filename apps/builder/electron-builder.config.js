@@ -34,7 +34,7 @@ const config = {
       },
     ],
     artifactName: "${productName}-Windows-${version}-Setup.${ext}",
-    icon: "dist/main/assets/icons/logo/logo.png",
+    icon: "dist/main/assets/icons/logo/windows/logo.ico",
   },
   mac: {
     target: [
@@ -43,10 +43,10 @@ const config = {
         // should be "default" for auto updater
         target: "default",
         arch: ["arm64", "x64"],
-        icon: "dist/main/assets/icons/logo/logo.png",
       },
     ],
     artifactName: "${productName}-Mac-${version}-Installer.${ext}",
+    icon: "dist/main/assets/icons/logo/mac/logo.icns",
     // name of the certificate to sign the electron app
     // without this, the application cannot be launched in a mac machine
     // and "arm64" and "x64" mac app build will fail
@@ -55,8 +55,8 @@ const config = {
   linux: {
     target: ["AppImage", "deb"],
     artifactName: "${productName}-Linux-${version}.${ext}",
-    icon: "dist/main/assets/icons/logo/logo.png",
   },
+  icon: "dist/main/assets/icons/logo/linux/logo.png",
 };
 
 module.exports = config;

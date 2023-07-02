@@ -14,4 +14,8 @@ declare global {
    * A main instance of the application window
    */
   var mainWindow: BrowserWindow | null;
+  /**
+   * A path to the asset folder
+   */
+  var assetsPath: string;
 }
