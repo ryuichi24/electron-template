@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "vite";
 import electron from "vite-plugin-electron";
 
@@ -8,6 +9,9 @@ export default defineConfig(() => {
         entry: "src/main/index.ts",
         name: "lib",
       },
+    },
+    resolve: {
+      alias: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
     },
     plugins: [
       electron([

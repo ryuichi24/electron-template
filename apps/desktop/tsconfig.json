@@ -2,6 +2,9 @@
   "extends": "@project/tsconfig/node.json",
   "include": ["src"],
   "compilerOptions": {
-    "noEmit": true
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }

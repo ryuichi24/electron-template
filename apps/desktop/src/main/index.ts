@@ -1,5 +1,6 @@
 import path from "path";
 import { BrowserWindow, app } from "electron";
+import { getGreetService } from "@/main/services";
 
 /**
  * Initialize custom global variables
@@ -21,6 +22,9 @@ const rendererFilePath = path.resolve(
 );
 
 async function main() {
+  const greetService = getGreetService();
+  greetService.hello();
+
   await app.whenReady();
 
   await createMainWindow().catch(shutDown);
