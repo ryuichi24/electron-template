@@ -1,0 +1,13 @@
+{
+  "name": "@project/builder",
+  "description": "This is an electron template project.",
+  "author": {
+    "name": "juniordevmind",
+    "email": "",
+    "url": "https://github.com/ryuichi24"
+  },
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/main/index.js",
+  "license": "MIT"
+}

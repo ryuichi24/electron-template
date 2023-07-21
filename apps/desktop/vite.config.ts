@@ -21,6 +21,11 @@ export default defineConfig(() => {
             build: {
               outDir: "dist/main",
             },
+            resolve: {
+              alias: [
+                { find: "@", replacement: path.resolve(__dirname, "./src") },
+              ],
+            },
           },
         },
         {

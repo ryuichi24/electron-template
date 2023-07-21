@@ -14,6 +14,19 @@ const config = {
   extraMetadata: {
     main: "dist/main/index.js",
   },
+  files: [
+    {
+      from: "dist",
+      filter: ["dist/main/assets/**/*"],
+    },
+  ],
+  extraResources: [
+    {
+      from: "dist/main/assets",
+      to: "assets",
+      filter: ["**/*"],
+    },
+  ],
   publish: [
     {
       provider: "github",
@@ -25,7 +38,6 @@ const config = {
       token: process.env.GH_TOKEN,
     },
   ],
-  files: ["dist", { from: "dist/main/assets", to: "assets", filter: ["**/*"] }],
   win: {
     target: [
       {

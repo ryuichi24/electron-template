@@ -2,12 +2,6 @@ import path from "path";
 import { BrowserWindow, app } from "electron";
 import { getGreetService } from "@/main/services";
 
-/**
- * Initialize custom global variables
- */
-global.mainWindow = null;
-global.assetsPath = path.join(app.getAppPath(), "assets");
-
 const isDev = !app.isPackaged;
 const rendererDevServerURL = `http://localhost:${
   process.env.VITE_DEV_SERVER_PORT || 3000
@@ -20,6 +14,14 @@ const rendererFilePath = path.resolve(
   "renderer",
   "index.html",
 );
+
+/**
+ * Initialize custom global variables
+ */
+global.mainWindow = null;
+global.assetsPath = isDev
+  ? path.resolve(__dirname, "..", "..", "assets")
+  : path.resolve(process.resourcesPath, "assets");
 
 async function main() {
   const greetService = getGreetService();
